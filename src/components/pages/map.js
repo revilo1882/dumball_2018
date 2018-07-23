@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 
-class Homepage extends Component {
+class Map extends Component {
   render() {
     return (
         <div className="container-fluid">
 
         <h1>
-          Home Page
+          Map
         </h1>
 
         <p>
@@ -18,4 +18,4 @@ class Homepage extends Component {
   }
 }
 
-export default Homepage;
+export default Map;
