@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
+const style = {
+  width: '1300px',
+  height: '600px'
+}
 
 class Journey extends Component {
   render() {
@@ -11,7 +15,16 @@ class Journey extends Component {
         </h1>
 
         <p>
-        <Map google={this.props.google} zoom={14}>
+        <Map
+          google={this.props.google}
+          style={style}
+          zoom={12}
+          initialCenter={{
+            lat: 28.7041,
+            lng: 77.1025
+          }}
+          onClick={this.onMapClicked}
+          >
 
           <Marker onClick={this.onMarkerClick}
                   name={'Current location'} />
