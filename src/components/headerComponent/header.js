@@ -15,6 +15,9 @@ class Header extends Component {
               <a href='#'>Home</a>
             </li>
             <li>
+              <a href='#'>Map</a>
+            </li>
+            <li>
               <a href='#'>Photos</a>
             </li>
             <li className="last">
