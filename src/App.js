@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import Header from './components/headerComponent/header';
+import Homepage from './components/pages/homePage';
 import './Assets/css/default.min.css'
 
 class App extends Component {
@@ -10,7 +11,7 @@ class App extends Component {
 
       <Header />
 
-      Dumball Story
+        <Homepage />
 
       </div>
     );
