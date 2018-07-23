@@ -7,7 +7,7 @@ import {
 
 import Header from './components/headerComponent/header';
 import Homepage from './components/pages/homePage';
-import Map from './components/pages/map';
+import Journey from './components/pages/journey';
 import Photos from './components/pages/photos';
 import Donate from './components/pages/donate';
 
@@ -23,7 +23,7 @@ class App extends Component {
       <Header />
 
       <Route exact path="/" component={Homepage} />
-      <Route exact path="/Map" component={Map} />
+      <Route exact path="/Journey" component={Journey} />
       <Route exact path="/Photos" component={Photos} />
       <Route exact path="/Donate" component={Donate} />
 

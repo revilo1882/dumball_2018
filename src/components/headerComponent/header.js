@@ -19,7 +19,7 @@ class Header extends Component {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/Map">Map</Link>
+              <Link to="/Journey">Journey</Link>
             </li>
             <li>
               <Link to="/Photos">Photos</Link>
