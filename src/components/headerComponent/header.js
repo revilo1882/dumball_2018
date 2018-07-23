@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {
   Link
 } from 'react-router-dom'
+import logo from './dumball_logo.png';
 
 class Header extends Component {
   render() {
@@ -9,7 +10,7 @@ class Header extends Component {
       <header>
 
         <div className="logo">
-          LOGO
+          <img src={logo} height="80px" width="180px" />
         </div>
 
         <nav>
@@ -35,17 +36,3 @@ class Header extends Component {
 }
 
 export default Header;
-
-<nav>
-  <ul>
-    <li classNAme="first">
-      <Link to="/">Home</Link>
-    </li>
-    <li>
-      <Link to="/Products">Products</Link>
-    </li>
-    <li className="last">
-      <Link to="/">Contact</Link>
-    </li>
-  </ul>
-</nav>
