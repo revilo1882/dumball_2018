@@ -14,6 +14,10 @@ header {
     @include translateY(-50%);
   }
 
+  .image {
+    height: 80px; width: 180px;
+  }
+
   nav,
   nav ul,
   nav ul li {

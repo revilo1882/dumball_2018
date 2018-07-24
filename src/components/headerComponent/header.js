@@ -10,7 +10,7 @@ class Header extends Component {
       <header>
 
         <div className="logo">
-          <img src={logo} height="80px" width="180px" />
+          <img className="image" src={logo} alt="" />
         </div>
 
         <nav>

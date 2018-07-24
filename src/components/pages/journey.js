@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
 const style = {
-  width: '1300px',
-  height: '600px'
+  width: '98%',
+  height: '85%'
 }
 
 class Journey extends Component {
@@ -11,7 +11,7 @@ class Journey extends Component {
         <div className="container-fluid">
 
         <h1>
-          Journey
+
         </h1>
 
         <p>
