@@ -6,9 +6,3 @@ node_js:
 
 addons:
   chrome: stable
-
-deploy:
-  provider: heroku
-  api_key:
-    secure: 96b10b5c-6be2-4276-8b9b-37b035f559f3
-  on: master
