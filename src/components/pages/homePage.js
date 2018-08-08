@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import pic from './story-pic.jpg';
+import pic from './photos/story-pic.jpg';
 
 class Homepage extends Component {
   render() {

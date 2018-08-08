@@ -22,7 +22,7 @@ class Header extends Component {
               <Link to="/Journey">Journey</Link>
             </li>
             <li>
-              <Link to="/Photos">Photos</Link>
+              <Link to="/Photos">Dumball 2016</Link>
             </li>
             <li className="last">
               <a href = 'https://www.justgiving.com/fundraising/matt-reade1'>Donate</a>
