@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import pic from './story-pic.jpg';
 
 class Homepage extends Component {
   render() {
@@ -6,8 +7,12 @@ class Homepage extends Component {
         <div className="container-fluid">
 
         <h1>
-          Our Story
+          <img
+            className="pic"
+            src={pic}
+            alt="" />
         </h1>
+
 
         <p>
         The Indian Drifters are back!!....and this time it{"'"}s personal (it’s

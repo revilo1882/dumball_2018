@@ -50,4 +50,11 @@ Mixins
 
 .container-fluid {
   line-height: 24px;
+
+  .pic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+  }
 }
