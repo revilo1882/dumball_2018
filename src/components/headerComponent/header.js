@@ -25,7 +25,7 @@ class Header extends Component {
               <Link to="/Photos">Photos</Link>
             </li>
             <li className="last">
-              <Link to="/Donate">Donate</Link>
+              <a href = 'https://www.justgiving.com/fundraising/matt-reade1'>Donate</a>
             </li>
           </ul>
         </nav>
