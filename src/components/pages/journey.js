@@ -35,7 +35,7 @@ class Journey extends Component {
         <p>
         <Map
           google={this.props.google}
-          style={{width: '98%', height: '85%', position: 'relative'}}
+          style={{width: '98%', height: '78%', position: 'relative'}}
           zoom={5}
           initialCenter={{
             lat: 46.0379,
