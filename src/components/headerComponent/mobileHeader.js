@@ -7,7 +7,7 @@ class MobileHeader extends Component {
   render() {
     return (
       <header>
-        <nav>
+        <nav style={{right: '15%', display: ""}}>
           <ul>
             <li className="first">
               <Link to="/">Home</Link>
