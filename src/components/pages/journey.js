@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
+import car from './photos/car.jpg';
 
 class Journey extends Component {
   state = {
@@ -28,9 +29,13 @@ class Journey extends Component {
     return (
         <div className="container-fluid">
 
-        <h1>
-
-        </h1>
+        <p>
+          <img
+            src={car}
+            alt=""
+            style={{
+            float: "right"}} />
+        </p>
 
         <p>
         <Map
