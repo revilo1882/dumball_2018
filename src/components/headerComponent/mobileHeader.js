@@ -7,13 +7,16 @@ class MobileHeader extends Component {
   render() {
     return (
       <header>
-        <nav style={{right: '15%', display: ""}}>
+        <nav style={{align: 'center', display: ""}}>
           <ul>
             <li className="first">
               <Link to="/">Home</Link>
             </li>
             <li>
               <Link to="/Journey">Journey</Link>
+            </li>
+            <li>
+              <Link to="/Map">Map</Link>
             </li>
             <li>
               <Link to="/Photos">2016</Link>
