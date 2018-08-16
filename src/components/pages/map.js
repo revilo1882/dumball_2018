@@ -3,6 +3,7 @@ import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
 
 
 class Mapper extends Component {
+
   state = {
     showingInfoWindow: false,
     activeMarker: {},
@@ -31,7 +32,7 @@ class Mapper extends Component {
         <p>
         <Map
           google={this.props.google}
-          style={{width: '98%', height: '85%'}}
+          style={{width: '98%', height: '85%', color: 'black'}}
           zoom={5}
           initialCenter={{
             lat: 46.0379,
@@ -88,6 +89,7 @@ class Mapper extends Component {
               <h1>{this.state.selectedPlace.name}</h1>
             </div>
           </InfoWindow>
+
         </Map>
         </p>
         </div>
