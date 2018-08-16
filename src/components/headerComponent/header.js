@@ -22,6 +22,9 @@ class Header extends Component {
               <Link to="/Journey">Journey</Link>
             </li>
             <li>
+              <Link to="/Map">Map</Link>
+            </li>
+            <li>
               <Link to="/Photos">Dumball 2016</Link>
             </li>
             <li className="last">

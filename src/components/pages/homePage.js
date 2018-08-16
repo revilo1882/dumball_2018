@@ -12,7 +12,7 @@ class Homepage extends Component {
             alt=""
             style={{
             float: "right",
-          width: "50%"}} />
+            width: "50%"}} />
         </p>
         <h1>
         The Indian Drifters are back!!

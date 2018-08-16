@@ -3,108 +3,61 @@ import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
 import car from './photos/car.jpg';
 
 class Journey extends Component {
-  state = {
-    showingInfoWindow: false,
-    activeMarker: {},
-    selectedPlace: {},
-  };
-
-  onMarkerClick = (props, marker, e) =>
-    this.setState({
-      selectedPlace: props,
-      activeMarker: marker,
-      showingInfoWindow: true
-    });
-
-  onMapClicked = (props) => {
-    if (this.state.showingInfoWindow) {
-      this.setState({
-        showingInfoWindow: false,
-        activeMarker: null
-      })
-    }
-  };
 
   render() {
     return (
         <div className="container-fluid">
-
         <p>
           <img
             src={car}
             alt=""
             style={{
-            float: "right"}} />
+            float: "right",
+            width: "50%"}} />
         </p>
-
         <p>
-        <Map
-          google={this.props.google}
-          style={{width: '98%', height: '85%', position: 'relative'}}
-          zoom={5}
-          initialCenter={{
-            lat: 46.0379,
-            lng: 8.5623
-          }}
-          onClick={this.onMapClicked}
-          >
-
-          <Marker
-            title={'The marker`s title will appear as a tooltip.'}
-            onClick={this.onMarkerClick}
-            name={'Friday 14/09/18'}
-            position={{lat: 51.3853, lng: 1.3772}}
-             />
-          <Marker
-            onClick={this.onMarkerClick}
-            name={'Saturday 15/09/18'}
-            position={{lat: 46.2040, lng: 6.1454}}
-              />
-          <Marker
-            onClick={this.onMarkerClick}
-            name={'Sunday 16/09/18'}
-            position={{lat: 46.6218, lng: 13.8488}}
-              />
-          <Marker
-            onClick={this.onMarkerClick}
-            name={'Monday 17/09/18'}
-            position={{lat: 43.8636, lng: 18.3880}}
-              />
-          <Marker
-            onClick={this.onMarkerClick}
-            name={'Tuesday 18/09/18'}
-            position={{lat: 42.7044, lng: 19.3958}}
-              />
-          <Marker
-            onClick={this.onMarkerClick}
-            name={'Wednesday 19/09/18'}
-            position={{lat: 42.6703, lng: 21.1645}}
-              />
-          <Marker
-            onClick={this.onMarkerClick}
-            name={'Thursday 20/09/18'}
-            position={{lat: 41.3243, lng: 19.4565}}
-              />
-          <Marker
-            onClick={this.onMarkerClick}
-            name={'Friday 21/09/18'}
-            position={{lat: 39.6550, lng: 19.9212}}
-              />
-          <InfoWindow
-          marker={this.state.activeMarker}
-          visible={this.state.showingInfoWindow}>
-            <div>
-              <h1>{this.state.selectedPlace.name}</h1>
-            </div>
-          </InfoWindow>
-        </Map>
+        From Friday 14th September 2018, our cavalcade of madness will take in the following route…
         </p>
-
+        <p>
+        MIDDAY FRIDAY<br />
+        MEET AT MARGATE: DREAMWORLD FOR A STAR STUDDED SEND OFF<br />
+        DRIVE TO: CALAIS, FRANCE<br />
+        </p>
+        <p>
+        SATURDAY<br />
+        DRIVE TO: LAKE GENEVA, SWITZERLAND<br />
+        </p>
+        <p>
+        SUNDAY<br />
+        DRIVE (THROUGH THE ALPS) TO: VILLACH, AUSTRIA<br />
+        </p>
+        <p>
+        MONDAY<br />
+        DRIVE TO: SARAJEVO, BOSNIA<br />
+        </p>
+        <p>
+        TUESDAY<br />
+        DRIVE TO: KOLASIN MOUTAIN RESORT, MONTENEGRO<br />
+        </p>
+        <p>
+        WEDNESDAY<br />
+        DRIVE TO: KOSOVO<br />
+        </p>
+        <p>
+        THURSDAY<br />
+        DRIVE TO: DURRES BEACH, ALBANIA<br />
+        </p>
+        <p>
+        FRIDAY<br />
+        DRIVE TO: CORFU, GREECE<br />
+        </p>
+        <p>
+        SATURDAY<br />
+        PARTY PARTY PARTY: SECRET LOCATION<br />
+        </p>
         </div>
     );
   }
 }
 
-export default GoogleApiWrapper({
-  apiKey: ("AIzaSyChzJ9aAD7HZRep-2mcg9pclAThuhNXzsk")
-})(Journey)
+export default Journey
