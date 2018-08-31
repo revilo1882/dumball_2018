@@ -9,6 +9,7 @@ import MobileHeader from './components/headerComponent/mobileHeader';
 import Homepage from './components/pages/homePage';
 import MobileHomepage from './components/pages/mobileHomePage';
 import Journey from './components/pages/journey';
+import MobileJourney from './components/pages/mobileJourney';
 import Mapper from './components/pages/map';
 import Photos from './components/pages/photos';
 
@@ -50,7 +51,7 @@ render() {
       <MobileHeader />
 
       <Route exact path="/" component={MobileHomepage} />
-      <Route exact path="/Journey" component={Journey} />
+      <Route exact path="/Journey" component={MobileJourney} />
       <Route exact path="/Map" component={Mapper} />
       <Route exact path="/Photos" component={Photos} />
 
