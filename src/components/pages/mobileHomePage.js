@@ -11,7 +11,7 @@ class Homepage extends Component {
 					<img
 						className='logo'
 						src={logo}
-						width='0%'
+						width='100%'
 						alt=''
 					/>
 				</h1>
