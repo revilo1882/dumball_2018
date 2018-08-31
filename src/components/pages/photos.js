@@ -5,7 +5,7 @@ import Gallery from 'react-photo-gallery';
 class Photos extends Component {
 	render() {
 		return (
-			<div className="container-fluid">
+			<div className="container-fluid" >
 				<Gallery photos={PHOTO_SET} />
 			</div>
 		);

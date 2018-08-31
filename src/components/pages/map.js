@@ -4,39 +4,33 @@ import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
 
 class Mapper extends Component {
 
-	constructor() {
-		super();
+	state = {
+    showingInfoWindow: false,
+    activeMarker: {},
+    selectedPlace: {},
+  };
 
-		this.state = {
-			showingInfoWindow: false,
-			activeMarker: {},
-			selectedPlace: {},
-		};
-	}
+  onMarkerClick = (props, marker, e) =>
+    this.setState({
+      selectedPlace: props,
+      activeMarker: marker,
+      showingInfoWindow: true
+    });
 
-	onMarkerClick(props, marker) {
-		this.setState({
-			selectedPlace: props,
-			activeMarker: marker,
-			showingInfoWindow: true
-		});
-	}
-
-	onMapClicked() {
-		if (this.state.showingInfoWindow) {
-			this.setState({
-				showingInfoWindow: false,
-				activeMarker: null
-			});
-		}
-	}
-
+  onMapClicked = (props) => {
+    if (this.state.showingInfoWindow) {
+      this.setState({
+        showingInfoWindow: false,
+        activeMarker: null
+      })
+    }
+  };
 	render() {
 		return (
 			<div className="container-fluid">
 				<Map
 					google={this.props.google}
-					style={{width: '98%', height: '85%', color: 'black'}}
+					style={{width: '98%', height: '85%', color: 'black', position: 'relative', top: '2%'}}
 					zoom={5}
 					initialCenter={{
 						lat: 46.0379,
@@ -44,7 +38,6 @@ class Mapper extends Component {
 					}}
 
 				>
-
 					<Marker
 						title={'The marker`s title will appear as a tooltip.'}
 						onClick={this.onMarkerClick}

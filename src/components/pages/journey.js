@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import car from './photos/car.jpg';
 
 class Journey extends Component {
-
 	render() {
 		return (
 			<div className="container-fluid">
@@ -20,7 +19,7 @@ class Journey extends Component {
 				<p>
         MIDDAY FRIDAY<br />
         MEET AT MARGATE: DREAMWORLD FOR A STAR STUDDED SEND OFF<br />
-        DRIVE TO: CALAIS, FRANCE<br />
+				DRIVE TO: CALAIS, FRANCE<br />
 				</p>
 				<p>
         SATURDAY<br />
