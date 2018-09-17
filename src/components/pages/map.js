@@ -49,7 +49,7 @@ class Mapper extends Component {
 				>
 					<Polyline
 						path={Coords}
-						geodesic={true} 
+						geodesic={true}
 						strokeColor="#0000FF"
 						strokeOpacity={0.8}
 						strokeWeight={2}

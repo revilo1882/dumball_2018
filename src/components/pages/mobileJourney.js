@@ -54,14 +54,14 @@ class Journey extends Component {
         SATURDAY<br />
         PARTY PARTY PARTY: SECRET LOCATION<br />
 				</p>
-        <p>
-          <img
-            src={car}
-            alt=""
-            style={{
-              float: 'right',
-              width: '100%'}} />
-        </p>
+				<p>
+					<img
+						src={car}
+						alt=""
+						style={{
+							float: 'right',
+							width: '100%'}} />
+				</p>
 			</div>
 		);
 	}
